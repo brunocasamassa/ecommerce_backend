@@ -1,5 +1,9 @@
 package org.acme.domain.products;
 
+import java.util.Random;
+
+import org.bson.types.ObjectId;
+
 import io.quarkus.mongodb.panache.PanacheMongoEntity;
 
 public class Product  extends PanacheMongoEntity{
@@ -40,7 +44,7 @@ public class Product  extends PanacheMongoEntity{
 
 
     public Product(){
-
+       this.productId=String.valueOf(new Random().nextInt(9999));
     }
 
 

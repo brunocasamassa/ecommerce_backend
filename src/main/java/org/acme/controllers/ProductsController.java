@@ -49,8 +49,7 @@ public class ProductsController {
 
     @POST
     public Response create(Product product) throws URISyntaxException {
-        ProductServiceAdd.execute(repository,product);
-        return Response.created(new URI("/" + product.id)).build();
+        return Response.created(new URI("/" + ProductServiceAdd.execute(repository,product))).build();
     }
 
     @PUT
