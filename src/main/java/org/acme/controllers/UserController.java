@@ -1,7 +1,6 @@
 package org.acme.controllers;
 
 import java.net.URISyntaxException;
-import java.util.ArrayList;
 
 import javax.inject.Inject;
 import javax.ws.rs.DELETE;
